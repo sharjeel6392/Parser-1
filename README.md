@@ -4,9 +4,9 @@ A monadic parser that implements the grammar below and parses lists of equations
 Grammar:<br />
 S &nbsp;::= Q , S <br />
 &emsp;::= Q<br />
-Q &nbsp;::= E = E<br />
+Q ::= E = E<br />
 E &nbsp;::= T E0<br />
-E0 &nbsp;::= + T E0<br />
+E0::= + T E0<br />
 &emsp;::= - T E0<br />
 &emsp;::= \epsilon<br />
 T &nbsp;::= F T0<br />
