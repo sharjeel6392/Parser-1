@@ -2,7 +2,7 @@
 A monadic parser that implements the grammar below and parses lists of equations.
 
 Grammar:
-S ::= Q , S \n
+S ::= Q , S <br />
   ::= Q
 Q ::= E = E
 E ::= T E0
