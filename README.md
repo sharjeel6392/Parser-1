@@ -3,11 +3,11 @@ A monadic parser that implements the grammar below and parses lists of equations
 
 Grammar:<br />
 S ::= Q , S <br />
-  ::= Q<br />
+&emsp;::= Q<br />
 Q ::= E = E<br />
 E ::= T E0<br />
 E0 ::= + T E0<br />
-   ::= - T E0<br />
+&emsp;::= - T E0<br />
    ::= \epsilon<br />
 T  ::= F T0<br />
 T0 ::= * F T0<br />
